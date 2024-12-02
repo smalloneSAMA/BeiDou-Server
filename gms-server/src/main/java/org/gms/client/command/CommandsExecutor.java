@@ -204,6 +204,7 @@ public class CommandsExecutor {
         addCommand("toggleexp", ToggleExpCommand.class);
         addCommand("mylawn", MapOwnerClaimCommand.class);
 
+
         commandsNameDesc.add(levelCommandsCursor);
     }
 
@@ -328,6 +329,7 @@ public class CommandsExecutor {
         addCommand("timer", 3, TimerCommand.class);
         addCommand("timermap", 3, TimerMapCommand.class);
         addCommand("timerall", 3, TimerAllCommand.class);
+        addCommand("xiguai", 3, XiGuaiCommand.class);
 
         commandsNameDesc.add(levelCommandsCursor);
     }

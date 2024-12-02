@@ -45,7 +45,7 @@ import org.gms.net.server.services.task.channel.OverallService;
 import org.gms.net.server.services.type.ChannelServices;
 import org.gms.net.server.world.Party;
 import org.gms.net.server.world.World;
-import org.gms.util.NumberTool;
+import org.gms.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.gms.scripting.event.EventInstanceManager;
@@ -71,9 +71,6 @@ import org.gms.server.life.SpawnPoint;
 import org.gms.server.partyquest.CarnivalFactory;
 import org.gms.server.partyquest.CarnivalFactory.MCSkill;
 import org.gms.server.partyquest.GuardianSpawnPoint;
-import org.gms.util.PacketCreator;
-import org.gms.util.Pair;
-import org.gms.util.Randomizer;
 
 import java.awt.*;
 import java.lang.ref.WeakReference;
@@ -193,6 +190,8 @@ public class MapleMap {
 
     // due to the nature of loadMapFromWz (synchronized), sole function that calls 'generateMapDropRangeCache', this lock remains optional.
     private static final Lock bndLock = new ReentrantLock(true);
+
+    private static final List<Combine> xiGuaiCombineMsg = new ArrayList<>();
 
     public MapleMap(int mapid, int world, int channel, int returnMapId, float monsterRate) {
         this.mapid = mapid;
@@ -4562,4 +4561,7 @@ public class MapleMap {
         this.timeExpand = timeExpand;
     }
 
+    public List<Combine> getXiGuaiCombineMsg() {
+        return xiGuaiCombineMsg;
+    }
 }

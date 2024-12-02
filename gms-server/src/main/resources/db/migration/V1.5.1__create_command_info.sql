@@ -143,6 +143,7 @@ INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES (
 INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES ('timer', 3, 1, 'TimerCommand', 3);
 INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES ('timermap', 3, 1, 'TimerMapCommand', 3);
 INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES ('timerall', 3, 1, 'TimerAllCommand', 3);
+INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES ('xiguai', 3, 1, 'XiGuaiCommand', 3);
 INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES ('servermessage', 4, 1, 'ServerMessageCommand', 4);
 INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES ('proitem', 4, 1, 'ProItemCommand', 4);
 INSERT INTO command_info (syntax, level, enabled, clazz, default_level) VALUES ('seteqstat', 4, 1, 'SetEqStatCommand', 4);
